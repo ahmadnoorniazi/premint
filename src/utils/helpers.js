@@ -5,6 +5,8 @@ const {
   VUE_APP_DISCORD_OAUTH_CLIENT_ID,
   VUE_APP_DISCORD_OAUTH_SECRET,
   VUE_APP_DISCORD_REDIRECT_URL,
+  VUE_APP_TWITTER_OAUTH_CLIENT_ID,
+  VUE_APP_TWITTER_REDIRECT_URL,
 } = process.env;
 
 export const TWITTER_API_ROUTES = {
@@ -30,8 +32,8 @@ export const buildOAuth2CredentialsRequest = (code) => ({
 export const buildTwitterOAuth2CredentialsRequest = (code) => ({
   code,
   grant_type: "authorization_code",
-  client_id: VUE_APP_DISCORD_OAUTH_CLIENT_ID || "",
-  redirect_uri: VUE_APP_DISCORD_REDIRECT_URL || "",
+  client_id: VUE_APP_TWITTER_OAUTH_CLIENT_ID || "",
+  redirect_uri: VUE_APP_TWITTER_REDIRECT_URL || "",
   code_verifier: "challenge",
 });
 
