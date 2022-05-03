@@ -57,7 +57,7 @@ export default {
   computed: {},
   methods: {
     onRevokeDiscord() {
-      window.localStorage.clear();
+      window.localStorage.setItem("discordUser", null);
       let data = JSON.parse(window.localStorage.getItem("discordUser"));
       this.discordData = data ? data : {};
     },
@@ -71,7 +71,7 @@ export default {
         .catch((err) => console.log("auth errrorrr", err));
     },
     onRevokeTwitter() {
-      window.localStorage.clear();
+      window.localStorage.setItem("twitterData", null);
       this.twitterData = null;
     },
   },
