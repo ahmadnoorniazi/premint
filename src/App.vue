@@ -1,13 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="white">
-      <div class="d-flex align-center logo-image">
-        <v-img
-          alt="Premint Logo"
-          src="https://redwood-labs.s3.amazonaws.com/premint/static/identity/images/wordmark.svg"
-          width="100"
-        />
-      </div>
+      <div class="d-flex align-center logo-image">App Name</div>
 
       <v-spacer></v-spacer>
     </v-app-bar>
