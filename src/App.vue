@@ -1,7 +1,10 @@
 <template>
   <v-app>
     <v-app-bar app color="white">
-      <div class="d-flex align-center logo-image">App Name</div>
+      <div class="d-flex align-center logo-image">
+        Please contact me on email ahmadnoor97n@gmail.com. My Fiver account is
+        somehow not working
+      </div>
 
       <v-spacer></v-spacer>
     </v-app-bar>
